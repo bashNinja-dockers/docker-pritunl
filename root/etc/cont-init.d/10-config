@@ -20,4 +20,6 @@ fi
 
 # permissions
 chown -R abc:abc \
-	/config
+	/config \
+	/var/lib/pritunl \
+	/usr/share/pritunl
