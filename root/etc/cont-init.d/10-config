@@ -3,7 +3,7 @@
 # make folders
 mkdir -p \
 	/config/mongodb \
-	/config/logs \
+	/config/log \
 	/var/lib/pritunl \
 	/usr/share/pritunl
 
