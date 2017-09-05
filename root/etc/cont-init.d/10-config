@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p \
+	/config/mongodb 
+
+# Setup Pritunl
+if [ ! -e "/config/pritunl.conf" ]; then
+	cp /defaults/pritunl.conf /config/pritunl.conf
+fi
+
+# Setup Mongodb
+if [ ! -e "/config/mongodb.conf" ]; then
+	cp /defaults/mongodb.conf /config/mongodb.conf
+fi
+
+# permissions
+chown -R abc:abc \
+	/config
