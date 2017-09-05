@@ -16,6 +16,6 @@
 
 ## Configure Pritunl
 
-* Open https://<youripaddress>:9700
+* Open https://`youripaddress`:9700
 * Login with username `pritunl` and password `pritunl`
 * Fun
