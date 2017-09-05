@@ -2,7 +2,11 @@
 
 # make folders
 mkdir -p \
-	/config/mongodb 
+	/config/mongodb \
+	/config/logs \
+	/var/lib/pritunl \
+	/usr/share/pritunl
+
 
 # Setup Pritunl
 if [ ! -e "/config/pritunl.conf" ]; then

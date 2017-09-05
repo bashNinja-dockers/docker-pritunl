@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-        s6-setuidgid abc /usr/bin/mongod -f /etc/mongodb.conf --fork --logpath /var/log/mongodb.log --config /config/mongodb.conf
+        s6-setuidgid abc /usr/bin/mongod -f /config/mongodb.conf --logpath /config/log/mongodb.log
