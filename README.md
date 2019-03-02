@@ -18,5 +18,5 @@
 ## Configure Pritunl
 
 * Open https://`youripaddress`:9700
-* Get your default creds (run on docker host via a shell): `docker exec -it test_pritunl pritunl default-password`
+* Get your default creds (run on docker host via a shell): `docker exec -it Pritunl pritunl default-password`
 * Fun
