@@ -13,6 +13,11 @@ if [ ! -e "/config/pritunl.conf" ]; then
 	cp /defaults/pritunl.conf /config/pritunl.conf
 fi
 
+if [ ! -L "/etc/pritunl.conf" ]; then
+	rm /etc/pritunl.conf
+    ln -s /config/pritunl.conf /etc/pritunl.conf
+fi
+
 # Setup Mongodb
 if [ ! -e "/config/mongodb.conf" ]; then
 	cp /defaults/mongodb.conf /config/mongodb.conf
